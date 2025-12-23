@@ -1,0 +1,22 @@
+//leetcode 27- remove element 
+class Solution {
+public:
+    int removeElement(vector<int>& nums, int val) {
+        int n=nums.size();
+        int k=0;
+        sort(nums.begin(),nums.end());
+        int j=n-1;
+        for(int i=0;i<n;i++){
+            if(nums[i]!=val){
+            nums[k]=nums[i];
+            k++;
+            
+            }
+        }
+        return k;
+
+        }
+
+        
+    
+};
